@@ -32,32 +32,44 @@ console.log(splitSentence(txt))
 
 
 // Desafio 4
-let nomes = ['a','b'];
 function concatName(nomes) {
   // seu código aqui
-  let resultado= [];
-  for (let index = 0; index < nomes.length; index += 1){
-  if(index === 0){
-resultado = nomes[index]
-}else if (index === nomes.length){
-  resultado.push(nomes[index])
-}else {
-  resultado = 0
-}
+let resultado = nomes.at(-1) + ', ' + nomes.at(0)
 return resultado
 }
-}
-console.log(concatName(nomes))
+
+console.log(concatName(["a","b"]))
+
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties) {
   // seu código aqui
+let w = wins * 3
+let t = ties * 1
+let resultado = w + t
+return resultado
 }
+console.log(footballPoints(2,4))
 
 // Desafio 6
-function highestCount() {
+let test = [9, 1, 2, 3, 9, 5, 7]
+function highestCount(test) {
   // seu código aqui
+let numeroMaiorSeRepete = -3;
+  for (let i = 0;i <= test.length; i += 1){
+    if(test[i] > numeroMaiorSeRepete){
+      numeroMaiorSeRepete = test[i]
+    }
+  };
+  let conta = 0
+  for(let i = 0; i <= test.length; i += 1 ) {
+    if(test[i] === numeroMaiorSeRepete) {
+      conta += 1
+    } 
+  }
+return conta
 }
+console.log(highestCount(test))
 
 // Desafio 7
 function catAndMouse() {
