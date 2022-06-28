@@ -72,6 +72,7 @@ return conta
 console.log(highestCount(test))
 
 // Desafio 7
+
 function catAndMouse() {
   // seu código aqui
 }
