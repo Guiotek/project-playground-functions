@@ -34,11 +34,11 @@ console.log(splitSentence(txt))
 // Desafio 4
 function concatName(nomes) {
   // seu código aqui
-let resultado = nomes.at(-1) + ', ' + nomes.at(0)
-return resultado
+//let resultado = nomes.at(-1) + ', ' + nomes.at(0)
+//return resultado
 }
 
-console.log(concatName(["a","b"]))
+//console.log(concatName(["a","b"]))
 
 
 // Desafio 5
@@ -73,7 +73,7 @@ console.log(highestCount(test))
 
 // Desafio 7
 
-function catAndMouse() {
+function catAndMouse(cat1,cat2,mouse) {
   // seu código aqui
 }
 
