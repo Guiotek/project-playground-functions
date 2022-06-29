@@ -52,7 +52,6 @@ return resultado
 console.log(footballPoints(2,4))
 
 // Desafio 6
-let test = [9, 1, 2, 3, 9, 5, 7]
 function highestCount(test) {
   // seu código aqui
 let numeroMaiorSeRepete = -3;
@@ -69,6 +68,7 @@ let numeroMaiorSeRepete = -3;
   }
 return conta
 }
+let test = [9, 1, 2, 3, 9, 5, 7]
 console.log(highestCount(test))
 
 // Desafio 7
