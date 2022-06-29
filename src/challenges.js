@@ -32,11 +32,13 @@ console.log(splitSentence(txt))
 
 
 // Desafio 4
+function concatName(nomes) {
 //function concatName(nomes) {
   // seu código aqui
 //let resultado = nomes.at(-1) + ', ' + nomes.at(0)
 //return resultado
-//}
+//
+}
 
 //console.log(concatName(["a","b"]))
 
