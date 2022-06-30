@@ -75,14 +75,40 @@ console.log(highestCount(test))
 
 // Desafio 7
 
-function catAndMouse(cat1,cat2,mouse) {
+function catAndMouse(mouse,cat1,cat2) {
   // seu código aqui
+  if(cat1 + 1 === mouse && cat2 -1 === mouse){
+    return "os gatos trombam e o rato foge"
+  } else if(cat1 > cat2){
+    return "cat2"
+  } else if(cat2 > cat1) {
+    return "cat1"
+  } 
 }
+console.log(catAndMouse(0,3,2))
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(param) {
   // seu código aqui
+  let a = []
+  for(let i = 0 ; i < param.length ; i += 1){
+    let contar = param[i] /3
+    let contar2 = param[i] /5
+    let r = Number.isInteger(contar)
+    let r2 = Number.isInteger(contar2)
+    if(r === true && r2 === true) {
+     a.push("fizzBuzz")
+    } else if (r === true ){
+      a.push("fizz")
+    } else if (r2 === true){
+      a.push("buzz")
+    } else {
+      a.push("bug!")
+    }
+  }
+  return a
 }
+console.log(fizzBuzz([9, 25]))
 
 // Desafio 9
 function encode() {
