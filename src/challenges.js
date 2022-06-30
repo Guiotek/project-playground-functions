@@ -111,15 +111,48 @@ function fizzBuzz(param) {
 console.log(fizzBuzz([9, 25]))
 
 // Desafio 9
-function encode() {
+function encode(p) {
   // seu código aqui
+  let palo = p
+  
+  for (let i = 0;i < palo.length ;i += 1){
+    if(palo[i] == 'a'){
+      palo = palo.replace(/a/g,'1')
+    }else if (palo[i] == 'e'){
+      palo = palo.replace(/e/g,'2')
+    }else if (palo[i] == 'i'){
+      palo = palo.replace(/i/g,'3')
+    }else if (palo[i] == 'o'){
+      palo = palo.replace(/o/g,'4')
+    }else if (palo[i] == 'u'){
+      palo = palo.replace(/u/g,'5')
+    }
+  }
+return palo
 }
-function decode() {
+console.log(encode("hello"))
+function decode(p21) {
   // seu código aqui
+  let pala = p21
+  for (let i = 0;i < pala.length ;i += 1){
+    if(pala[i] == '1'){
+      pala = pala.replace(/1/g,'a')
+    }else if (pala[i] == '2'){
+      pala = pala.replace(/2/g,'e')
+    }else if (pala[i] == '3'){
+      pala = pala.replace(/3/g,'i')
+    }else if (pala[i] == '4'){
+      pala = pala.replace(/4/g,'o')
+    }else if (pala[i] == '5'){
+      pala = pala.replace(/5/g,'u')
+    }
+  }
+return pala
 }
-
+console.log(decode("h2ll4"))
 // Desafio 10
 function techList() {
+
   // seu código aqui
 }
 
